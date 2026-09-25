@@ -12,7 +12,7 @@ The service is not open yet. Today there is [nodegrove.io](https://nodegrove.io)
 - **Active parameters set the speed, not the memory.** Qwen3-Coder-Next 80B-A3B reads 3B parameters per token but keeps all 79.7B in memory: 48.9 GB at Q4_K_M with 8k context, against 22.4 GB for the dense Qwen3 32B.
 - **24 of 29 models fit a 24 GB card at Q4_K_M with 8k context.** The largest is Qwen3.6 35B-A3B at 22.4 GB, under the 22.8 GB line (95% of the card).
 
-[Latest release](https://github.com/nodegrove/llm-vram-dataset/releases/latest) · [Method and columns](https://nodegrove.io/data) · Data version 2026-09-18
+[Latest release](https://github.com/nodegrove/llm-vram-dataset/releases/latest) · [Method and columns](https://nodegrove.io/data) · Data version 2026-09-25
 
 ### Free tools
 
