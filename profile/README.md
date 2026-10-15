@@ -6,13 +6,13 @@ The service is not open yet. Today there is [nodegrove.io](https://nodegrove.io)
 
 ### Open data
 
-**[llm-vram-dataset](https://github.com/nodegrove/llm-vram-dataset)**: how much GPU memory 33 open-weight models need at six quantisations and every common context length, and which of 39 GPUs run each one. Architecture values from each model's config.json, GPU specs from the manufacturers, one formula written out. CSV and JSON under CC BY 4.0: use it anywhere, with a link back.
+**[llm-vram-dataset](https://github.com/nodegrove/llm-vram-dataset)**: how much GPU memory 34 open-weight models need at six quantisations and every common context length, and which of 39 GPUs run each one. Architecture values from each model's config.json, GPU specs from the manufacturers, one formula written out. CSV and JSON under CC BY 4.0: use it anywhere, with a link back.
 
 - **Newer models pay far less for context.** At 32k tokens, Qwen3 32B (2025, standard attention) spends 8.6 GB on its KV cache; its successor Qwen3.8 27B (2026, hybrid attention) spends 2.3 GB.
 - **Active parameters set the speed, not the memory.** Qwen3-Coder-Next 80B-A3B reads 3B parameters per token but keeps all 79.7B in memory: 48.9 GB at Q4_K_M with 8k context, against 22.4 GB for the dense Qwen3 32B.
-- **28 of 33 models fit a 24 GB card at Q4_K_M with 8k context.** The largest is Qwen3.6 35B-A3B at 22.4 GB, under the 22.8 GB line (95% of the card).
+- **28 of 34 models fit a 24 GB card at Q4_K_M with 8k context.** The largest is Qwen3.6 35B-A3B at 22.4 GB, under the 22.8 GB line (95% of the card).
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22966137.svg)](https://doi.org/10.5281/zenodo.22966137) [Latest release](https://github.com/nodegrove/llm-vram-dataset/releases/latest) · [Method and columns](https://nodegrove.io/data) · Data version 2026-10-09
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22966137.svg)](https://doi.org/10.5281/zenodo.22966137) [Latest release](https://github.com/nodegrove/llm-vram-dataset/releases/latest) · [Method and columns](https://nodegrove.io/data) · Data version 2026-10-16
 
 ### Free tools
 
